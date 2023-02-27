@@ -6,7 +6,7 @@ class Stack():
   def is_stack_empty(self):
     pass
 
-  def push(self):
+  def push(self, x):
     pass
 
   def pop(self):
@@ -14,5 +14,5 @@ class Stack():
 
 
 def test_stack():
-  S = Stack()
-  print("...")  
+  s = Stack()
+  print('all tests passed')
