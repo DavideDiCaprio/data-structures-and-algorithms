@@ -16,3 +16,6 @@ class Stack():
 def test_stack():
   s = Stack()
   print('all tests passed')
+
+  #Check if Stack is succesfuly created.
+  assert s != None, f'''The instance is not created successfully'''
