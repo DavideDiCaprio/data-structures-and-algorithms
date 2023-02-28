@@ -16,20 +16,30 @@ class Stack():
 def test_stack():
   s = Stack()
   
-  #is_stack_empty test.
-
   #Check if Stack is succesfuly created.
-  assert s != None, f'''The instance is not created successfully'''
+  assert s != None, f'The instance is not created successfully.'
+
+  #Ckeck if is stack is empty.
+  s_empty_test = s.is_stack_empty()
+  assert s_empty_test == True, f'At this point stack must be empty.'
   
-  #Check if is_stack_empty works.
-  s.is_stack_empty()
-  assert s == False or s==True, f'Is_stack_empty must return True or False'
-
-  #push test.
+  #Check if push correctly add item in s.
   s.push(x=4)
+  s.push(x='letter')
+  
+  s_push_test = s.is_stack_empty()
+  assert s_push_test == False, f'Stack must not be empty at this point. '
 
-  #Check if push takes an integer.
-  if not isinstance(x, int):
-    raise ValueError(f'x must be int.')
-
-  print('all tests passed')
+  #Check if pop remove items correctly.
+  s.pop()
+  s.pop()
+  
+  s_pop_test = s.is_stack_empty()
+  assert s_pop_test == True, f'At this point stack must be empty.'
+  
+  #
+  try:
+    empty_s = s.pop() 
+    assert empty_s == False, f'Pop must not possible, stack must be empty.'
+  except RuntimeError:
+    pass #
