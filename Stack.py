@@ -9,7 +9,7 @@ class Stack():
     return False 
   
   def push(self, x):
-    pass
+    self.stack.append(x)
 
   def pop(self):
     pass 
