@@ -13,7 +13,7 @@ class Stack():
 
   def pop(self):
     if self.is_stack_empty():
-      return 'stack empty, pop not possible.'
+      raise RuntimeError()
     self.stack.pop(len(self.stack)-1)
     return self.stack[-1]
 
