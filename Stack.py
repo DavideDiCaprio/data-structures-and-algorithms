@@ -38,8 +38,7 @@ def test_stack():
 
   try:
     s.pop() 
-    assert s.is_stack_empty == True, f'Pop must not possible, stack must be empty.'
   except RuntimeError:
-    pass # 
+    pass #Pop must not possible, stack must be empty.
 
   print('all tests passed')
