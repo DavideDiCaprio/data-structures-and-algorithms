@@ -7,7 +7,7 @@ Note: assume there are NO other characters than '(', ')' in the input string.
 
 A string of parentheses s, is valid if and only if, for each open parentheses '(',
 there is a corresponding closing parentheses ')', and vice versa. If a closing
-parenthesis is unmatched by any opening one, or an opening one is not matched by a
+parenthesis is unmatched by an opening one, or an opening one is not matched by a
 closing parentheses, then the string is not valid.
 
 Examples:
@@ -16,7 +16,7 @@ Examples:
 '(()' -> not valid
 '(())' -> valid
 '((())())' -> valid
-'((())()' -> not valid.
+'((())()))' -> not valid.
 
 To solve this exercise, start by implementing the test function. Once you are
 satisfied with the test, move on to the implementation of the main function.
@@ -27,6 +27,8 @@ def are_parentheses_valid(s):
 
 
 def test_are_parentheses_valid():
+  # write tests here.
+  
   print('All Tests Passed!')
  
 
