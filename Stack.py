@@ -12,9 +12,12 @@ class Stack():
     self.stack.append(x)
 
   def pop(self):
-    pass 
+    if self.is_stack_empty():
+      return 'stack empty, pop not possible.'
+    self.stack.pop(len(self.stack)-1)
+    return self.stack[-1]
 
-
+  
 def test_stack():
   #Create stack.
   s = Stack()
