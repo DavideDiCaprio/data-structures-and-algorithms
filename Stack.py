@@ -1,7 +1,7 @@
 class Stack():
 
   def __init__(self):
-    pass
+    self.stack = []
 
   def is_stack_empty(self):
     pass
