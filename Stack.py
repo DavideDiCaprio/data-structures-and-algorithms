@@ -4,8 +4,10 @@ class Stack():
     self.stack = []
 
   def is_stack_empty(self):
-    pass
-
+    if len(self.stack) == 0:
+      return True
+    return False 
+  
   def push(self, x):
     pass
 
