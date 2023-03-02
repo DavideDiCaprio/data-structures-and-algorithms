@@ -12,8 +12,7 @@ class Stack():
   def pop(self):
     if self.is_stack_empty():
       raise RuntimeError()
-    self.stack.pop(len(self.stack)-1)
-    return self.stack[-1]
+    return self.stack.pop()
 
   
 def test_stack():
@@ -33,9 +32,9 @@ def test_stack():
   
   #Check if pop remove items correctly.
   s_pop_element = s.pop() 
-  assert s_pop_element == 'letter', f'Unespected output, get: {s_pop_element}, expected 'letter'. '
+  assert s_pop_element == 'letter', f'''Unespected output, get: {s_pop_element}, expected 'letter'. '''
   s_pop_element = s.pop() 
-  assert s_pop_element == '4', f'Unespected output, get: {s_pop_element}, expected '4'. '
+  assert s_pop_element == 4, f'''Unespected output, get: {s_pop_element}, expected '4'. '''
 
   assert s.is_stack_empty() == True, f'At this point stack must be empty.'
 
