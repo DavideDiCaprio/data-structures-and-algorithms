@@ -28,13 +28,13 @@ def are_parentheses_valid(s):
 
 def test_are_parentheses_valid():
   
-  assert are_parentheses_valid(s='()') != None, f'Function not created succesfuly.'
-  
-  assert are_parentheses_valid(s='()') != None, f'Function not created succesfuly.'
-  assert are_parentheses_valid(s='()') == True, f' '
-  assert are_parentheses_valid(s='(') == False, f' ' 
-  assert are_parentheses_valid(s='(') == False, f' '
-  assert are_parentheses_valid(s='))((') == False, f' '
+  assert are_parentheses_valid(s='()') == True, f''' '()' is a valid input. Function must return True. '''
+  assert are_parentheses_valid(s='(') == False, f''' '(' isn't a valid input. A open parentheses require a closed one. '''
+  assert are_parentheses_valid(s=')') == False, f''' ')' isn't a valid input. A closed parentheses require a open one. '''
+  assert are_parentheses_valid(s='(()))') == False, f''' '(()))' isn't a valid input. Number of open and closed parentheses is not the same. '''
+  assert are_parentheses_valid(s='))((') == False, f'''If a closed parentheses appears before open one is impossibile to satisfy function requirement. '''
+  assert are_parentheses_valid(s='(()))()') == False, f''' '(()))()' isn't a valid input. Unmached parentheses. '''
+  assert are_parentheses_valid(s='((())())(())') == True, f''' For each open parentheses there is a closed one. Function must return True. '''
 
   print('All Tests Passed!')
 
