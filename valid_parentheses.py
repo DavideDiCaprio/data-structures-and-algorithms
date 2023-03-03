@@ -29,27 +29,13 @@ def are_parentheses_valid(s):
 def test_are_parentheses_valid():
   
   assert are_parentheses_valid(s='()') != None, f'Function not created succesfuly.'
-
-  try:
-    are_parentheses_valid(s='(')
-  except RuntimeError:
-    pass # give only open parenthesis
-
-  try:
-    are_parentheses_valid(s=')')
-  except RuntimeError:
-    pass # give only closing parenthesis
   
-  try:
-    are_parentheses_valid(s='()'
-  except RuntimeError:
-    pass # unexpected error,'()' is a valid input.
+  assert are_parentheses_valid(s='()') != None, f'Function not created succesfuly.'
+  assert are_parentheses_valid(s='()') == True, f' '
+  assert are_parentheses_valid(s='(') == False, f' ' 
+  assert are_parentheses_valid(s='(') == False, f' '
+  assert are_parentheses_valid(s='))((') == False, f' '
 
-  try:
-    are_parentheses_valid(s='))((')
-  except RuntimeError:
-    pass # unmached parentheses
-    
   print('All Tests Passed!')
 
 test_are_parentheses_valid()
