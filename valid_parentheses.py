@@ -22,10 +22,23 @@ To solve this exercise, start by implementing the test function. Once you are
 satisfied with the test, move on to the implementation of the main function.
 '''
 
+from Stack import Stack 
+
 def are_parentheses_valid(s):
-  pass
-
-
+  stack = Stack()
+  for p in s:
+    if p == '(':
+      stack.push(p)
+    else:
+      if p == ')':
+        if stack.is_stack_empty():
+          return False
+        stack.pop()
+  if stack.is_stack_empty():
+    return True
+  return False
+  
+  
 def test_are_parentheses_valid():
   
   assert are_parentheses_valid(s='()') == True, f''' '()' is a valid input. Function must return True. '''
