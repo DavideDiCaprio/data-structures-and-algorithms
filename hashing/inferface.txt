@@ -1,0 +1,5 @@
+class HashMap{
+    void put(k, v);
+    int get(k);
+    int len();
+}
