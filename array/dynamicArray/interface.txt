@@ -1,0 +1,8 @@
+class DynamicArray {
+    void add(int x);
+    void delete(int i);
+    int len();
+    int get(int i);
+    void set(int i, int x);
+    void resize():
+}
