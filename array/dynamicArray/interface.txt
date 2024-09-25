@@ -1,7 +1,7 @@
 class DynamicArray {
-    void add(int x); 
-    void delete(int i);
-    int len();
-    int get(int i);
-    void set(int i, int x);
+    void add(int x); // Amortized O(1), worst-case O(N)
+    void delete(int i); -> O(N)
+    int len(); -> O(1)
+    int get(int i); -> O(1)
+    void set(int i, int x); -> O(1)
 }
