@@ -1,0 +1,8 @@
+class Stack() {
+    stack = []
+    append
+    pop
+    not stackstack[-1]
+    len
+}
+

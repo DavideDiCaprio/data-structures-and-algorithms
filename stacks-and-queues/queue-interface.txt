@@ -1,0 +1,7 @@
+class Queue(){
+    queue
+    append
+    popleft
+    queue[0]
+    len
+}
