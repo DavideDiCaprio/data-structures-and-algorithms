@@ -1,0 +1,38 @@
+class Binary_Search_Tree {
+    /**
+     * Inserts a value into the tree, maintaining the BST property.
+     */
+    void insert(int value); // Average: O(log N), Worst: O(N)
+
+    /**
+     * Deletes a value from the tree, maintaining the BST property.
+     */
+    void delete(int value); // Average: O(log N), Worst: O(N)
+
+    /**
+     * Checks if a value exists in the tree.
+     */
+    boolean contains(int value); // Average: O(log N), Worst: O(N)
+
+    /**
+     * Returns a list of lists, where each inner list contains the
+     * node values at that level (Level Order Traversal).
+     */
+    List<List<Integer>> breadth_First_Search(); // O(N)
+
+    /**
+     * Traverses the tree in Root-Left-Right order.
+     */
+    List<Integer> preorder_Traversal(); // O(N)
+
+    /**
+     * Traverses the tree in Left-Right-Root order.
+     */
+    List<Integer> postorder_Traversal(); // O(N)
+
+    /**
+     * Traverses the tree in Left-Root-Right order, which
+     * yields the elements in sorted order.
+     */
+    List<Integer> inorder_Traversal(); // O(N)
+}

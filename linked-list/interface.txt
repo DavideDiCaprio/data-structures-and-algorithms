@@ -1,0 +1,31 @@
+class LinkedList {
+    /**
+     * Adds an element to the end of the list.
+     */
+    void add(int value); // O(N)
+
+    /**
+     * Adds an element to the beginning of the list.
+     */
+    void prepend(int value); // O(1)
+
+    /**
+     * Removes and returns the element from the beginning of the list.
+     */
+    int removeFirst(); // O(1)
+
+    /**
+     * Removes the element at a specific index.
+     */
+    void remove(int index); // O(N)
+
+    /**
+     * Retrieves the element at a specific index.
+     */
+    int get(int index); // O(N)
+
+    /**
+     * Returns the number of elements in the list.
+     */
+    int size(); // O(1)
+}

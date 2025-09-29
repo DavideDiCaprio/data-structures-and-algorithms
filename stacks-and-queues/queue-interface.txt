@@ -1,7 +1,26 @@
-class Queue(){
-    queue
-    append
-    popleft
-    queue[0]
-    len
+class Queue {
+    /**
+     * Adds an element to the back of the queue (FIFO).
+     */
+    void enqueue(int value); // O(1)
+
+    /**
+     * Removes and returns the element from the front of the queue.
+     */
+    int dequeue(); // O(1)
+
+    /**
+     * Returns the element at the front of the queue without removing it.
+     */
+    int peek(); // O(1)
+
+    /**
+     * Returns the number of elements in the queue.
+     */
+    int size(); // O(1)
+
+    /**
+     * Checks if the queue is empty.
+     */
+    boolean isEmpty(); // O(1)
 }

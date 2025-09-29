@@ -1,0 +1,70 @@
+class Array {
+    /**
+     * Retrieves the element at a specific index.
+     */
+    int get(int index); // O(1)
+
+    /**
+     * Modifies the element at a specific index.
+     */
+    void set(int index, int value); // O(1)
+
+    /**
+     * Adds an element to the end of the array.
+     */
+    void append(int value); // O(1) amortized
+
+    /**
+     * Inserts an element at a specific index, shifting
+     * subsequent elements to the right.
+     */
+    void insert(int index, int value); // O(N)
+
+    /**
+     * Removes and returns the element at a specific index,
+     * shifting subsequent elements to the left.
+     */
+    int remove(int index); // O(N)
+
+    /**
+     * Searches for a value and returns its first index.
+     * Returns -1 if not found.
+     */
+    int search(int value); // O(N)
+    
+    /**
+     * Returns the number of elements in the array.
+     */
+    int size(); // O(1)
+}
+
+
+class DynamicArray {
+    /**
+     * Adds an element to the end of the array. The array
+     * is resized if its capacity is reached.
+     */
+    void add(int value); // O(1) amortized
+
+    /**
+     * Deletes the element at a specific index, shifting
+     * subsequent elements to the left. The array may be
+     * resized if it becomes too sparse.
+     */
+    void delete(int index); // O(N)
+
+    /**
+     * Returns the number of elements in the array.
+     */
+    int len(); // O(1)
+
+    /**
+     * Retrieves the element at a specific index.
+     */
+    int get(int index); // O(1)
+
+    /**
+     * Modifies the element at a specific index.
+     */
+    void set(int index, int value); // O(1)
+}

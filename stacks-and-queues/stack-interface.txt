@@ -6,3 +6,29 @@ class Stack() {
     len
 }
 
+class Stack {
+    /**
+     * Adds an element to the top of the stack (LIFO).
+     */
+    void push(int value); // O(1)
+
+    /**
+     * Removes and returns the element from the top of the stack.
+     */
+    int pop(); // O(1)
+
+    /**
+     * Returns the element at the top of the stack without removing it.
+     */
+    int peek(); // O(1)
+
+    /**
+     * Returns the number of elements in the stack.
+     */
+    int size(); // O(1)
+
+    /**
+     * Checks if the stack is empty.
+     */
+    boolean isEmpty(); // O(1)
+}
